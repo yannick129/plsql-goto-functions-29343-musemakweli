@@ -24,7 +24,7 @@ CREATE TABLE employees (
     department_id NUMBER REFERENCES departments(department_id)
 );
 
--- 4. Insert Departments Seed Data
+-- 4. Insert data into Departments
 INSERT INTO departments VALUES (10, 'Administration');
 INSERT INTO departments VALUES (20, 'Marketing');
 INSERT INTO departments VALUES (30, 'Purchasing');
@@ -41,5 +41,4 @@ INSERT INTO employees VALUES (104, 'Bruce', 'ISHIMWE', 7000, TO_DATE('2019-09-11
 INSERT INTO employees VALUES (105, 'David', 'IRAKOZE', 4500, TO_DATE('2010-07-05', 'YYYY-MM-DD'), 60);
 INSERT INTO employees VALUES (106, 'VANESSA', 'MUREKATETE', 6800, TO_DATE('2022-02-05', 'YYYY-MM-DD'), 90);
 
--- 6. Save Changes
 COMMIT;
